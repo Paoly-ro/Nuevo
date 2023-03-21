@@ -1,0 +1,55 @@
+/* */
+@import url('https://fonts.googleapis.com/css2?family=Phudu&family=Shantell+Sans:ital,wght@1,500&display=swap');
+*{
+    font-family: 'Phudu', cursive;
+    font-family: 'Shantell Sans', cursive;
+    margin:0%;
+}
+    body{
+    background-color: blueviolet;
+}
+header{
+    color:blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #261b1b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+a{
+    color:blue;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    gap: 60px;
+}
+@keyframes de-izquierda-a-derecha{
+    0%{
+        transform:translatex(-500px);
+    }
+    100%{
+        transform:translatex(0px);
+    }
+
+}
+.caja{
+    animation-name:de-izquierda-a-derecha;
+    animation-duration: 2000ms;
+    width: 400px;
+    height: 400px;
+    background-color:darkolivegreen;
+    border: 5px gold solid;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+}
+.caja:hover{
+    transition: 2s linear;
+    background-color: dodgerblue;
+    transform: rotate(360deg);
+}
